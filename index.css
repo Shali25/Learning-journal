@@ -1,0 +1,364 @@
+
+/* TYPOGRAPHY */
+
+h2, .new-journey-date,
+.blog-date,
+.blog-text,
+.view-more
+.p2, .h1b{
+    color: #141414;
+}
+
+.header-text{
+    color: #0E0E0E;
+    font-size: 0.9375rem;
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+h1, p,
+.hero-date{
+    color: #FFFFFF; 
+}
+
+
+h1{
+    position: absolute;
+    bottom: 3em;
+    left: 16px;
+    max-width: 350px;
+}
+
+h1, .h1b{
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.h1b{
+    padding: .75em 0;
+}
+
+h2{
+    margin-top: .25em;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+
+p{
+    position: absolute;
+    font-weight: 400;
+    bottom: .5em;
+    left: 16px;
+    line-height: 1.5;
+    max-width: 375px;
+    font-size: 1rem;
+    line-height: 1.25;
+}
+
+.p2{
+    line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1.25;
+    margin-bottom: 2em;
+}
+
+.blog-date, .hero-date, .new-journey-date{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.hero-date, .new-journey-date{
+    font-size: 0.75rem;
+}
+
+.hero-date{
+    position: absolute;
+    bottom: 17em;
+    left: 16px;
+}
+
+.blog-date{
+    font-size: 0.88rem;
+    padding-top: 1em;
+    text-align: left;
+}
+
+.blog-text{
+    margin-top: .25em;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none; 
+    color: inherit;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover { color:chocolate}
+    
+a:hover { color:chocolate}
+
+.view-more{
+    font-size: 1rem;
+    font-weight: bold;
+    grid-column: 2 / 3;
+    margin: 2em 0;
+    text-decoration-line: underline;
+}
+
+
+/* BODY */
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    background-color:#FFFFFF;
+    text-align: center;
+}
+
+.container{
+    
+    display: grid;
+    grid-template-columns: 1.5em 1fr 1.5em;
+    grid-template-rows: 59px auto; 
+    justify-content: center;
+    width: 100%;
+    min-width: 400px;
+}
+
+
+/* HEADER */
+
+.header{
+    background-color:#9b5de5;
+    grid-column: 2 / -2;
+    grid-row: 1 / 2;
+
+}
+
+.left{
+    display: flex;
+}
+
+
+.banner{
+    display: flex;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+    height: 59px;
+    align-items: center;
+}
+
+.btns{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: #090909;
+}
+
+.aboutme-btn{
+    margin-left: 2em;
+}
+
+/* HERO */
+
+.hero-img,
+.blog-img{
+    width: 100%;
+}
+
+.blog-img-taller{
+    width: 100%;
+    object-fit: cover;
+}
+
+.profile-img{
+    width: 33%;
+    max-width: 182px;
+   
+}
+
+
+.hero{
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    position: relative;
+    text-align: left;
+    
+}
+
+/* BLOG */
+
+.blog1, .blog2,
+.blog3, .blog4,
+.blog4, .blog5,
+.blog6,
+.hero2, .hero3,
+h3{
+    margin-top: 2em;
+    text-align: left;
+    grid-column: 2 / 3;
+}
+
+
+
+h3{
+    margin: 1.5em auto;
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: #202020;
+    color: #FFFFFF;;
+    grid-column: 1 / -1;
+    padding: 2em 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.footer-text{
+    font-size: .75em;
+    font-weight: bold;
+}
+
+.copyright-text{
+    font-size: .75em;
+    font-weight: 400;
+}
+
+
+/* NEW JOURNEY PAGE */
+
+
+.new-journey-img{
+    grid-column: 2 / -2;
+    width: 100%;
+}
+
+
+
+/****** MEDIA QUERY *****   480px, 768px, 1024px, 1280px *****/
+
+@media (min-width: 1023px){
+   
+
+    
+    /* TYPOGRAPHY */
+    
+    .hero-date, .new-journey-date{
+        font-size: 1rem;
+    }
+
+    .hero-date{
+        bottom: 13.7em;
+        left: 27px;
+    }
+
+    h1{
+        bottom: 3.4em;
+        left: 27px;
+        max-width: 700px;
+    }
+
+    h1, .h1b{
+        font-size: 2.5rem;
+        line-height: 1.1;
+    }
+
+    
+
+    p{
+        bottom: 3.5em;
+        left: 27px;
+        line-height: 1.5;
+        max-width: 600px;
+        line-height: 1.5;
+    }
+
+    .p2{
+        margin-bottom: 2.5em;
+    }
+
+    .btns{
+        font-size: 1rem;
+    }
+
+    .aboutme-btn{
+        margin-left: 3em;
+    }
+
+    .header-text{
+        font-size: 1.25rem;
+    }
+
+    .banner{
+         height: 83px;
+    }
+    
+    .blog-img{
+        width: 100%;
+    }
+
+    
+    .container{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 2.5em 1fr 1em 1fr 1em 1fr 2.5em;
+        grid-template-rows: 83px auto auto; 
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+   
+
+    .blog1, .blog4{
+        grid-column: 2 / 3;
+    }
+
+    .blog2, .blog5, h3{
+        grid-column: 4 / 5;
+    }
+
+    .blog3, .blog6{
+        grid-column: 6 / 7;
+    }
+
+    .view-more{
+        font-size: 1rem;
+        grid-column: 1 / -1;
+        
+    }
+
+    .hero2, .hero3{
+        grid-column: 2 / -2;
+    }
+   
+    .group-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+   
+    .profile-img{
+        min-width: 182px;
+        margin-right: 2em;
+    }
+
+   .mar-bot{
+    margin-bottom: 4em;
+   }
+    
+}
+
+
+
